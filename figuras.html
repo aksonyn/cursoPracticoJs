@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Figuras Geometricas | Cuso Practico de JavaScript Platzi</title>
+    <title>Calculadora | Cuso Practico de JavaScript Platzi</title>
 </head>
 <body>
     <header>
         <h1>
-            Figuras Geometricas
+            Calculadora Figuras Geometricas, Procentajes y Descuentos
         </h1>
         <p>Primer Taller del curso practico de JavaScript</p>
     </header>
     <section>
-        <h2>Calcula el area y el perimetro de un cuadrado</h2>
+        <h3>Calcula el area y el perimetro de un cuadrado</h3>
         <form action="">
             <label for="inputCuadrado">
                 Escribe cuanto miden los lados de tu Cuadrado
@@ -25,7 +25,7 @@
         </form>
     </section>
     <section>
-        <h2>Calcula el Diametro, el area y el perimetro de un circulo</h2>
+        <h3>Calcula el Diametro, el area y el perimetro de un circulo</h3>
         <form action="">
             <label for="inputCirculo">
                 Escribe el Radio del circulo
@@ -37,7 +37,7 @@
         </form>
     </section>
     <section>
-        <h2>Calcula el area y el perimetro de un triangulo</h2>
+        <h3>Calcula el area y el perimetro de un triangulo</h3>
         <form action="">
             <label for="inputTriangulo">
                 Escribe el cuanto mide el Lado 1 del triangulo
@@ -55,6 +55,20 @@
             <button type="button" onclick="calcularAreaTriangulo()">Calcula el Area</button>
         </form>
     </section>
+    <section>
+        <h3>Porcetajes y Descuentos</h2>
+        <p>Segundo Taller curso practico de JavaScript</p>
+        <form action="">
+            <label for="inputPrice">Ingresa el precio de tu producto</label>
+            <input type="number" id="inputPrice">
+            <label for="inputDiscount">Ingresa el descuento de tu producto</label>
+            <input type="number" id="inputDiscount">
+            <button type="button" onclick="precioDescuento()">Calcula el precio con descuento</button>
+            <p id="responsePrice"></p>
+
+        </form>
+    </section>
     <script src="./figuras.js"></script>
+    <script src="./descuentos.js"></script>
 </body>
 </html>
