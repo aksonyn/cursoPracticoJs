@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora | Cuso Practico de JavaScript Platzi</title>
 </head>
-<body>
+<body onload="myOnLoad()">
     <header>
         <h1>
             Calculadora Figuras Geometricas, Procentajes y Descuentos
@@ -59,9 +59,12 @@
         <h3>Porcetajes y Descuentos</h2>
         <p>Segundo Taller curso practico de JavaScript</p>
         <form action="">
+            <p>selecciona un cupon de la lista</p>
+            <select name="cupon" id="selectCupon">
+            </select>
             <label for="inputPrice">Ingresa el precio de tu producto</label>
             <input type="number" id="inputPrice">
-            <label for="inputDiscount">Ingresa el descuento de tu producto</label>
+            <label for="inputDiscount">si tienes un descuento especial que no figura en la lista ingresalo aqui</label>
             <input type="number" id="inputDiscount">
             <button type="button" onclick="precioDescuento()">Calcula el precio con descuento</button>
             <p id="responsePrice"></p>
